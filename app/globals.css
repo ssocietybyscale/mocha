@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Kalnia:wght@100..700&family=Manrope:wght@200..800&family=Sora:wght@100..800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap");
 
 :root {
   --district-black: #1c1c1c;
@@ -29,8 +30,6 @@ body {
   background: linear-gradient(180deg, #f9f4dc 0%, #ffffff 60%, #ffffff 100%);
   background-attachment: fixed;
   color: var(--district-black);
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
   min-height: 100vh;
 }
 
@@ -39,10 +38,14 @@ h2,
 h3,
 h4,
 h5,
-h6,
-p {
+h6 {
   margin: 0;
   font-family: "Sora", sans-serif;
+}
+
+p {
+  margin: 0;
+  font-family: "Inter", sans-serif;
 }
 
 button {
