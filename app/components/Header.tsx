@@ -1,5 +1,5 @@
 import React from "react";
-import { MapPin } from "lucide-react";
+import { MapPin, Instagram } from "lucide-react";
 import "./Header.css";
 
 const Header: React.FC = () => {
@@ -22,14 +22,29 @@ const Header: React.FC = () => {
               <MapPin className="location-icon" />
             </div>
             <div className="location-text">
-              <span className="city-name">Bhubaneswar, West Bengal</span>
+              <span className="city-name">Bhubaneswar, Odisha</span>
             </div>
           </div>
         </div>
 
-        {/* Right Section */}
-        <div>
-          <button className="mobile-login-btn">Login</button>
+        <div className="right">
+          <a
+            href="https://www.whatsapp.com/channel/0029Vb5fR5I6rsQmoskHy10s"
+            className="social-icon-btn-right whatsapp-btn"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img src="whatsapp.png" alt="WhatsApp" className="icon-svg" />
+          </a>
+
+          <a
+            href="https://www.instagram.com/districtupdates/"
+            className="social-icon-btn-right instagram-btn"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Instagram className="icon-svg" />
+          </a>
         </div>
       </div>
     </header>
