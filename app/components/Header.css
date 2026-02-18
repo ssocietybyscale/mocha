@@ -6,7 +6,7 @@
   background-color: #ffffff;
   border-bottom: 1px solid var(--district-border);
   z-index: 1000;
-  height: 64px;
+  height: 66px;
 }
 
 @media (min-width: 768px) {
@@ -144,8 +144,69 @@
   color: var(--text-secondary);
 }
 
-@media (min-width: 768px) {
-  .mobile-login-btn {
-    display: none;
+.right {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+/* Button container */
+.social-icon-btn-right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 40px;
+  height: 40px;
+
+  background-color: #ffffff;
+  border-radius: 10px; /* Rounded but not circle */
+  border: 1px solid #e5e5e5; /* Soft border */
+
+  color: var(--district-red);
+  text-decoration: none;
+}
+
+/* Icons */
+.icon-svg {
+  width: 22px;
+  height: 22px;
+}
+
+/* WhatsApp slightly bigger */
+.whatsapp.icon-svg {
+  width: 24px;
+  height: 24px;
+}
+
+@media (max-width: 768px) {
+  .right {
+    gap: 6px;
+  }
+  .social-icon-btn-right {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+  }
+  .icon-svg {
+    width: 14px;
+    height: 14px;
+  }
+  .whatsapp.icon-svg {
+    width: 16px;
+    height: 16px;
+  }
+  .location-picker {
+    padding: 0;
+  }
+  .location-icon {
+    width: 16px;
+    height: 16px;
+  }
+  .logo-main {
+    font-size: 0.9rem;
+  }
+  .city-name {
+    font-size: 0.7rem;
   }
 }
