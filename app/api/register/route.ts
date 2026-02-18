@@ -88,24 +88,53 @@ export async function POST(request: Request) {
           to: email,
           subject: "Mocha Event - Registration Confirmed",
           html: `
-            <div style="font-family: sans-serif; max-width: 600px; margin: 0 auto; padding: 20px; border: 1px solid #e0e0e0; border-radius: 8px;">
-              <h2 style="color: #1C1C1C;">Registration Confirmed</h2>
-              <p>Hi <strong>${fullName}</strong>,</p>
-              <p>Thank you for registering for the <strong>Mocha Mono Vol. 2</strong> event. We have successfully received your details.</p>
-              
-              <div style="background-color: #f9fafb; padding: 15px; border-radius: 6px; margin: 20px 0;">
-                <p style="margin: 5px 0; font-size: 14px; color: #555;"><strong>Bookings:</strong> ${interest} Person(s)</p>
-                <p style="margin: 5px 0; font-size: 14px; color: #555;"><strong>Total Amount:</strong> ₹${totalPrice}</p>
-                <p style="margin: 5px 0; font-size: 14px; color: #555;"><strong>Email:</strong> ${email}</p>
-              </div>
+              <div style="font-family: Arial, Helvetica, sans-serif; max-width: 600px; margin: 0 auto; padding: 24px; background-color: #ffffff; border: 1px solid #e0e0e0; border-radius: 10px;">
 
-              <p>We will review your request and get back to you shortly with further details regarding payment and venue directions.</p>
-              
-              <p style="margin-top: 30px; font-size: 12px; color: #999;">
-                Mocha Mono Vol.2<br>
-                Bhubaneswar
-              </p>
-            </div>
+                <h2 style="color:#1C1C1C; margin-bottom:10px;">
+                  Your Entry is Confirmed — Welcome to Mocha Mono Vol. 2 🎶
+                </h2>
+
+                <p style="font-size:15px; color:#333;">
+                  Dear <strong>${fullName}</strong>,
+                </p>
+
+                <p style="font-size:15px; color:#333;">
+                  Your entry to <strong>Mocha Mono Vol. 2</strong> has been successfully confirmed, and we’re glad you joined us on the spot.
+                </p>
+
+                <p style="font-size:15px; color:#333;">
+                  Thank you for booking your entry at the venue and becoming part of an evening dedicated to vinyl music, meaningful conversations, good food, and great vibes. This experience is all about slowing down, tuning in, and truly feeling the music.
+                </p>
+
+                <div style="background:#f9fafb; padding:16px; border-radius:8px; margin:22px 0;">
+                  <p style="margin:6px 0; font-size:14px;"><strong>Name:</strong> ${fullName}</p>
+                  <p style="margin:6px 0; font-size:14px;"><strong>Number of Entries:</strong> ${interest}</p>
+                  <p style="margin:6px 0; font-size:14px;"><strong>Event:</strong> Mocha Mono Vol. 2</p>
+                  <p style="margin:6px 0; font-size:14px;"><strong>Venue:</strong> Bombai Cafe</p>
+                  <p style="margin:6px 0; font-size:14px;"><strong>Date:</strong> 20th February 2026</p>
+                  <p style="margin:6px 0; font-size:14px;"><strong>Time:</strong> 4:30 PM onwards</p>
+                </div>
+
+                <p style="font-size:15px; color:#333;">
+                  Your spot is now secured, and we’re excited to have you with us for this special evening.
+                </p>
+
+                <p style="font-size:15px; color:#333;">
+                  If you need any assistance during the event, feel free to connect with our team at the venue or contact us at <strong>73278 22710</strong>.
+                </p>
+
+                <p style="font-size:15px; color:#333;">
+                  Thank you for being here and booking your entry with us. We hope you have a memorable experience. ✨
+                </p>
+
+                <p style="margin-top:30px; font-size:14px; color:#333;">
+                  Warm regards,<br>
+                  <strong>Team Mocha Mono</strong><br>
+                  SSOCIETY BY SCALE<br>
+                  Contact: 73278 22710
+                </p>
+
+              </div>
           `,
         });
 
