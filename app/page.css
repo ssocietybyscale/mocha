@@ -6,7 +6,7 @@
 
 .main-wrapper {
   flex-grow: 1;
-  padding-top: 64px; /* header height mobile */
+  padding-top: 82px; /* header height mobile */
   padding-bottom: 48px;
   padding-left: 16px;
   padding-right: 16px;
@@ -325,4 +325,15 @@
 .sticky-wrapper {
   position: sticky;
   top: 124px; /* Header height + spacing */
+}
+
+@media (max-width: 768px) {
+  .venue-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    gap: 10px;
+    padding: 1.5rem;
+  }
 }
