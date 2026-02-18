@@ -167,6 +167,12 @@ const Home: React.FC = () => {
             </div>
           </div>
         </div>
+          {/* Right Column: The Requested Form */}
+        <div className="form-column">
+          <div className="sticky-wrapper">
+            <EventForm />
+          </div>
+        </div>
       </div>
     </main>
   );
