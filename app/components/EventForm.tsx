@@ -359,7 +359,7 @@ const EventForm: React.FC = () => {
             <circle cx="12" cy="10" r="3"></circle>
           </svg>
           <span style={{ lineHeight: "1.4" }}>
-            The B.O.M.B.A.I | Chandrasekharpur, Bhubaneshwar, Bhubaneswar
+            The B.O.M.B.A.I | Chandrasekharpur, Bhubaneshwar
           </span>
         </div>
       </div>
