@@ -452,7 +452,7 @@ const EventForm: React.FC = () => {
         </div>
 
         {/* Message */}
-        <div className="form-group" style={{ marginBottom: "32px" }}>
+        {/* <div className="form-group" style={{ marginBottom: "32px" }}>
           <label htmlFor="message" className="input-label">
             Message <span className="optional-text">(Optional)</span>
           </label>
@@ -466,7 +466,7 @@ const EventForm: React.FC = () => {
             disabled={status !== "idle"}
             className="text-area"
           />
-        </div>
+        </div> */}
 
         {/* Submit Button */}
         <button
