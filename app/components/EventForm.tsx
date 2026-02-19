@@ -101,19 +101,22 @@ const EventForm: React.FC = () => {
 
     // WhatsApp Prefix Logic
     if (name === "whatsappNumber") {
-      // Remove all non-digits for validation
-      const digits = value.replace(/\D/g, "");
+      // Remove non-digits
+      let digits = value.replace(/\D/g, "");
 
-      // If user starts typing and doesn't have + or +91, we add it
+      // Remove leading country code if user typed 91 manually
+      if (digits.startsWith("91")) {
+        digits = digits.slice(2);
+      }
+
+      // Limit to 10 digits max
+      digits = digits.slice(0, 10);
+
+      // Rebuild final value with +91
       if (digits.length > 0) {
-        if (!value.startsWith("+91")) {
-          // If they typed something like 987..., prepend +91
-          if (value.startsWith("91") && value.length > 2) {
-            value = "+" + value;
-          } else if (!value.startsWith("+")) {
-            value = "+91 " + value;
-          }
-        }
+        value = `+91${digits}`;
+      } else {
+        value = "";
       }
     }
 
@@ -395,7 +398,7 @@ const EventForm: React.FC = () => {
               name="whatsappNumber"
               value={formData.whatsappNumber}
               onChange={handleChange}
-              placeholder="+91 98765 43210"
+              placeholder="+919876543210"
               disabled={status !== "idle"}
               className={`text-input ${errors.whatsappNumber ? "has-error" : ""}`}
             />
