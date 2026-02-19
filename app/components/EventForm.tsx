@@ -208,7 +208,7 @@ const EventForm: React.FC = () => {
         <div className="success-icon-bg">
           <Send className="success-icon" />
         </div>
-        <h3 className="success-title">Request Sent!</h3>
+        <h3 className="success-title">Booking Confirmed!</h3>
         <p className="success-desc">
           Thanks for reaching out, {formData.fullName.split(" ")[0]}.<br />
           {emailSent ? (
@@ -243,7 +243,7 @@ const EventForm: React.FC = () => {
           }}
           className="reset-btn"
         >
-          Send Another
+          Book More Tickets
         </button>
       </div>
     );
