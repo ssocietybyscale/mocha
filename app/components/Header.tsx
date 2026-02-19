@@ -29,7 +29,7 @@ const Header: React.FC = () => {
 
         <div className="right">
           <a
-            href="https://www.whatsapp.com/channel/0029Vb5fR5I6rsQmoskHy10s"
+            href="https://wa.me/917327822710"
             className="social-icon-btn-right whatsapp-btn"
             target="_blank"
             rel="noopener noreferrer"
@@ -38,7 +38,7 @@ const Header: React.FC = () => {
           </a>
 
           <a
-            href="https://www.instagram.com/districtupdates/"
+            href="https://www.instagram.com/ssocietybyscale?igsh=dDV4dGlya2x0cjR2"
             className="social-icon-btn-right instagram-btn"
             target="_blank"
             rel="noopener noreferrer"
